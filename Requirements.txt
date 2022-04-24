@@ -1,0 +1,6 @@
+Selenium
+BeautifulSoup
+Requests
+Streamlit
+altair
+vega_datasets
