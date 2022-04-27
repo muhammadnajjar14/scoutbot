@@ -371,7 +371,7 @@ if st.checkbox('Show free agents',key='fa'):
     st.subheader("Players Available For Free:")
     st.title("Players Available For Free")
     st.write(fa)
-if st.checkbox("All others:")
+if st.checkbox("All others:"):
     st.title("Other players")
     st.write(other)
 
