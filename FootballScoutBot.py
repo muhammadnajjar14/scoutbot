@@ -145,8 +145,9 @@ if st.checkbox("All others:"):
 
 
 # In[67]:
-
-
+fa=pd.read_excel('fa.xlsx')
+ooc=pd.read_excel('ooc.xlsx')
+other=pd.read_excel('other.xlsx')
 st.title("But first, some observations!")
 st.write(print(ooc.columns))
 og=ooc.groupby(['Area']).mean()
