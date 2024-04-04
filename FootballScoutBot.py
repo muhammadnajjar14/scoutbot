@@ -146,9 +146,9 @@ if st.checkbox("All others:"):
 
 # In[67]:
 st.title("But first, some observations!")
-st.write(ooc.groupby(['Area']).mean())
-og=ooc.groupby(['Area']).mean()
-of=fa.groupby(['Area']).mean()
+st.write(ooc.groupby(['Area'])['Per 90 Minutes_npxG+xA'].mean())
+og=ooc.groupby(['Area'])['Per 90 Minutes_npxG+xA'].mean()
+of=fa.groupby(['Area'])['Per 90 Minutes_npxG+xA'].mean()
 st.write(og.iloc[: , -3:])
 st.write(of.iloc[: , -3:])
 st.write("We can see some obvious information such as Attackers have more npXg and Xg than defenders \n but something interesting to note is that midfielders play more minutes no matter what the age ")
