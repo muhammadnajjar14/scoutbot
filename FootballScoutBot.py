@@ -146,10 +146,14 @@ if st.checkbox("All others:"):
 
 # In[67]:
 st.title("But first, some observations!")
-og=ooc.groupby(['Age']).mean()
-of=fa.groupby(['Age']).mean()
+og=ooc.groupby(['Area'])['Non Penalty Efficiency', 'Penalty Efficiency','90s rank by age'].mean()
+of=fa.groupby(['Area'])[['Non Penalty Efficiency', 'Penalty Efficiency','90s rank by age'].mean()
 st.write(og.iloc[: , -3:])
 st.write(of.iloc[: , -3:])
+
+
+
+
 st.write("We see some information such as Attackers have more npXg and Xg than defenders \n but something interesting to note is that midfielders play more minutes no matter what the age ")
 st.subheader("For 'out of contracts dataset':")
 st.area_chart(og)
