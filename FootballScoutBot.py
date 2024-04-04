@@ -148,7 +148,7 @@ if st.checkbox("All others:"):
 
 
 st.title("But first, some observations!")
-st.write(print(ooc['Area']))
+st.write(print(ooc.columns))
 og=ooc.groupby(['Area']).mean()
 of=fa.groupby(['Area']).mean()
 st.write(og.iloc[: , -3:])
