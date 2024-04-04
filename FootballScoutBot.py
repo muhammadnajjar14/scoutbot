@@ -146,10 +146,10 @@ if st.checkbox("All others:"):
 
 # In[67]:
 st.title("But first, some observations!")
-og=ooc.groupby(['Area'])['Non Penalty Efficiency', 'Penalty Efficiency','90s rank by age'].mean()
-of=fa.groupby(['Area'])['Non Penalty Efficiency', 'Penalty Efficiency','90s rank by age'].mean()
-st.write(og.iloc[: , -3:])
-st.write(of.iloc[: , -3:])
+og=ooc.groupby(['Area']).mean()
+of=fa.groupby(['Area']).mean()
+st.write(og.iloc[: , -4:-1])
+st.write(of.iloc[: , -4:-1])
 
 
 
