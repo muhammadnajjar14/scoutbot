@@ -146,8 +146,8 @@ if st.checkbox("All others:"):
 
 # In[67]:
 st.title("But first, some observations!")
-og=ooc.groupby(['Area']).mean()
-of=fa.groupby(['Area']).mean()
+og=ooc.groupby(['Age']).mean()
+of=fa.groupby(['Age']).mean()
 st.write(og.iloc[: , -3:])
 st.write(of.iloc[: , -3:])
 st.write("We see some information such as Attackers have more npXg and Xg than defenders \n but something interesting to note is that midfielders play more minutes no matter what the age ")
